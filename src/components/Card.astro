@@ -1,18 +1,24 @@
 ---
 const CardDiv = "div";
 const Container = "div";
+/* Operadores ternarios */
+// const visible = true;
 
 /* Expor title, name id etc */
 export interface Props {
   name: string;
   profession?: string;
+  avatar: boolean;
 }
-const { name, profession = "No profession" } = Astro.props;
+const { name, profession = "No profession", avatar } = Astro.props;
 ---
 
 <!-- dynamic labels --><!-- We can rename card -->
 <CardDiv class="card bg-gray-900 text-white">
-  <img src="public/images/avatar1.png" alt="" />
+  <img
+    src={avatar ? "public/images/avatar1.png" : "public/images/avatar2.png"}
+    alt="Image"
+  />
   <Container class="container">
     <h4>{name}</h4>
     <p>{profession}</p>
