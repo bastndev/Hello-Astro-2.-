@@ -2,12 +2,16 @@
 import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title.astro";
 import Card from "../components/Card.astro";
+import Profile from "../components/Profile.astro";
 ---
 
 <Layout title="Hello Astro.">
 	<Title />
-	<Card name="Lucas" profession="Software ingenire" avatar={true} />
-	<Card name="Maria" avatar={false}>
-		<p slot="parrafo" class="text-gray-500">Lorem ipsum dolor sit amet.</p>
-	</Card>
+	<div class="flex justify-center">
+		<Profile hello="Hello" welcome="Welcome my profile" />
+		<Card name="Lucas" profession="Software ingenire" avatar={true} />
+		<Card name="Maria" avatar={false}>
+			<p slot="parrafo" class="text-gray-500">Lorem ipsum dolor sit amet.</p>
+		</Card>
+	</div>
 </Layout>
