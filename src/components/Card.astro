@@ -1,14 +1,21 @@
 ---
 const CardDiv = "div";
 const Container = "div";
+
+/* Expor title, name id etc */
+export interface Props {
+  name: string;
+  profession?: string;
+}
+const { name, profession } = Astro.props;
 ---
 
 <!-- dynamic labels --><!-- We can rename card -->
 <CardDiv class="card bg-gray-900 text-white">
   <img src="public/images/avatar1.png" alt="" />
   <Container class="container">
-    <h4>Gohit</h4>
-    <p>Software Ingenire</p>
+    <h4>{name}</h4>
+    <p>{profession}</p>
   </Container>
 </CardDiv>
 
@@ -21,7 +28,7 @@ const Container = "div";
     transition: 0.3s;
     padding: 10px;
     border-radius: 10px;
-    height: 250px;
+    height: 16rem;
     display: flex;
     flex-direction: column;
     align-items: center;
