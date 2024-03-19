@@ -1,8 +1,8 @@
 ---
+import Footer from "../layouts/Footer.astro";
 interface Props {
 	title: string;
 }
-
 const { title } = Astro.props;
 ---
 
@@ -19,6 +19,7 @@ const { title } = Astro.props;
 	<body>
 		<h1>Hello astro <span class="text-gradient">Astro</span></h1>
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
