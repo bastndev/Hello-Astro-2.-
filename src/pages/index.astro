@@ -7,5 +7,7 @@ import Card from "../components/Card.astro";
 <Layout title="Hello Astro.">
 	<Title />
 	<Card name="Lucas" profession="Software ingenire" avatar={true} />
-	<Card name="Maria" avatar={false} />
+	<Card name="Maria" avatar={false}>
+		<p slot="parrafo" class="text-gray-500">Lorem ipsum dolor sit amet.</p>
+	</Card>
 </Layout>
