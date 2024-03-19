@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Title from "../components/Title.astro";
 import Card from "../components/Card.astro";
 import Profile from "../components/Profile.astro";
+import Button from "../components/widgets/button.astro";
 ---
 
 <Layout title="Hello Astro.">
@@ -13,5 +14,10 @@ import Profile from "../components/Profile.astro";
 		<Card name="Maria" avatar={false}>
 			<p slot="parrafo" class="text-gray-500">Lorem ipsum dolor sit amet.</p>
 		</Card>
+	</div>
+	<!-- <br /> -->
+	<Button />
+	<div class="h-96 bg-red-400">
+		<!-- <p class="text-center text-white">Footer</p> -->
 	</div>
 </Layout>
