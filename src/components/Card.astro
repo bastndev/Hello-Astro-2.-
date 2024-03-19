@@ -7,7 +7,7 @@ export interface Props {
   name: string;
   profession?: string;
 }
-const { name, profession } = Astro.props;
+const { name, profession = "No profession" } = Astro.props;
 ---
 
 <!-- dynamic labels --><!-- We can rename card -->
