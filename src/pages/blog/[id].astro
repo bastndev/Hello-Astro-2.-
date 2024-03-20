@@ -1,13 +1,25 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+const { id } = Astro.params;
+---
 
-export function getStaticPaths() {
+<!-- FIXME: Dinamy shape-->
+<Layout title="Blog">
+  <h2>The registe id is {id}</h2>
+</Layout>
+
+<!-- FIXME: Static shape -->
+<!-- ---
+import Layout from "../../layouts/Layout.astro";
+
+/* export function getStaticPaths() {
   return [
     { params: { id: "123" } },
     { params: { id: "123456" } },
     { params: { id: "123_hello" } },
   ];
-}
+} */
+
 
 const { id } = Astro.params;
 ---
@@ -15,3 +27,4 @@ const { id } = Astro.params;
 <Layout title="Blog">
   <h2>The registe id is {id}</h2>
 </Layout>
+-->
