@@ -1,12 +1,16 @@
 ---
-layout: '../../layouts//Layout.astro'
+layout: '../../layouts//Layoutmd.astro'
+title: "Astro tile "
+data: "02/19/2024"
 ---
 
-# Astro Starter Kit: Basics
+# Astro Title Starter Kit: Basics
+## Subtitle ok
 
-```sh
-npm create astro@latest -- --template basics
-```
+Lorem ipsum dolor sit hello welcome to my page  than you so match for visit my fam page arigato o se you tomorrow tempore!
+
+Lorem ipsum dolor sit hello welcome to my page  than you so match for visit my fam page arigato o se you tomorrow tempore!
+
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
 [![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
